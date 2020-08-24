@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444;
+}
+
+ul {
+    list-style-type: none;
+}
+.container {
+    border: 1px solid red;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Small */
+/* @media only screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+} */
+
+/* Medium */
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* Large */
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Extra Large */
+/* @media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+} */

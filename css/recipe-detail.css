@@ -1,0 +1,105 @@
+/* ............... */
+/* section view */
+/* ............... */
+.view {
+    background-image: url(../image/images/recipes/6.jpg);
+    height: 767px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+/* ............... */
+/* section recipe-detail */
+/* ............... */
+.recipe-detail {
+    padding-top: 64px;
+    padding-bottom: 70px;
+}
+
+.recipe-detail__row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/* row-1 */
+/* ******** */
+.beggier {
+    background-color: #ff2a6b;
+    margin-bottom: 10px;
+    padding: 14px 20px 12px 30px;
+    color: #fff;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #474747;
+}
+
+.date {
+    font-size: 14px;
+    color: #a4a4a4;
+    margin-bottom: 30px;
+}
+
+.recipe-start {
+    display: flex;
+    margin-bottom: 55px;
+}
+.recipe-start i {
+    margin-right: 2px;
+    color: #fbb710;
+
+    font-size: 14px;
+}
+.recipe-start .active {
+    color: #e0e3e4;
+
+    font-size: 14px;
+}
+
+/* row-2 */
+/* ******** */
+
+.recipe-detail__col1 {
+    position: relative;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: #eff3f7;
+}
+.recipe-detail__absolute {
+    /* position: absolute; */
+    padding: 22px 50px;
+
+    background-color: #ff2a6b;
+    color: #fff;
+
+    font-size: 15px;
+    z-index: 1;
+}
+
+.recipe-detail__form {
+    padding: 55px 30px 55px 55px;
+}
+
+.recipe-detail__form h2 {
+    margin-bottom: 35px;
+
+    color: #474747;
+
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: inherit;
+}
+
+.form-check {
+    margin-bottom: 25px;
+}
+
+label {
+    padding: 2px 0 8px 15px;
+}
