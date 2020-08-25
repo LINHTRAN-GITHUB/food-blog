@@ -60,6 +60,7 @@ h1 {
 .recipes-row {
     margin-left: -15px;
     margin-right: -15px;
+    position: relative;
 }
 
 .recipes-h2 {
@@ -67,8 +68,6 @@ h1 {
     padding-top: 18px;
     padding-left: 15px;
     padding-right: 15px;
-
-    position: relative;
 }
 .recipes-h2 h2 {
     font-size: 36px;
@@ -76,13 +75,26 @@ h1 {
 }
 .recipes-h2::before {
     content: "";
-    width: 80px;
-    height: 8px;
+    width: 60px;
+    height: 5px;
     /* border: 1px solid yellow; */
     background-color: #fe2a6b;
     position: absolute;
     left: 15px;
     top: 0;
+}
+
+.recipes-h2::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 75px;
+
+    width: 0;
+    height: 0;
+    border-top: 5px solid #ff2a6b;
+    border-right: 10px solid transparent;
 }
 
 /* ***** */
@@ -94,13 +106,9 @@ h1 {
     flex-flow: row wrap;
 }
 
-.recipes-row__food {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 .recipes-row__relative {
     position: relative;
+
     margin-bottom: 30px;
 }
 
@@ -108,7 +116,7 @@ h1 {
     vertical-align: middle;
 }
 
-.recipes-absolute {
+.recipes-absolute-col {
     /* border: 1px solid purple; */
     background-color: #fe2a6b;
 
@@ -116,10 +124,22 @@ h1 {
     left: 0;
     bottom: 0;
     width: 80%;
-    padding: 17px 25px 15px 25px;
+    padding: 1rem 1.56rem 1rem 1.56rem;
 }
 
-.recipes-absolute h3 {
+.recipes-absolute-col::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -1.9rem;
+
+    width: 0;
+    height: 0;
+    border-top: 4.9rem solid #ff2a6b;
+    border-right: 1.9rem solid transparent;
+}
+
+.recipes-absolute-col h3 {
     /* border: 1px solid black; */
     font-size: 15px;
     font-weight: 500;
@@ -136,6 +156,9 @@ ul.recipes-row__start > li i {
     /* border: 1px solid black; */
     color: yellow;
     font-size: 11px;
+}
+.recipes-row__start .white {
+    color: white;
 }
 
 /* row-3 */

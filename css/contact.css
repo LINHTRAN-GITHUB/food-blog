@@ -62,10 +62,15 @@ h3 {
 .contact-row {
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
 
+.contact-col__left {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .contact-form__name,
 .contact-form__email {
     padding-right: 15px;
@@ -116,6 +121,14 @@ h3 {
     justify-content: space-between;
 }
 
+.form-group__submit {
+    margin-bottom: 40px;
+}
+
+.contact-col__right {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .contact-col__right img {
     margin-bottom: 40px;
 }
