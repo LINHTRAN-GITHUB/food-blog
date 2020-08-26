@@ -105,11 +105,11 @@ h1 {
     justify-content: space-between;
     flex-flow: row wrap;
 }
-
+.recipes-row__food-ul > li {
+    padding: 15px;
+}
 .recipes-row__relative {
     position: relative;
-
-    margin-bottom: 30px;
 }
 
 .recipes-row__relative img {
@@ -192,151 +192,4 @@ ul.recipes-row__start > li i {
 
     font-size: 16px;
     font-weight: 700;
-}
-
-.col-1 {
-    width: 8.3333333333%;
-}
-
-.col-2 {
-    width: 16.6666666667%;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-4 {
-    width: 33.3333333333%;
-}
-
-.col-5 {
-    width: 41.6666666667%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: 58.3333333333%;
-}
-
-.col-8 {
-    width: 66.6666666667%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-10 {
-    width: 83.3333333333%;
-}
-
-.col-11 {
-    width: 91.6666666667%;
-}
-
-.col-12 {
-    width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-    .col-md-1 {
-        width: 8.3333333333%;
-    }
-
-    .col-md-2 {
-        width: 16.6666666667%;
-    }
-
-    .col-md-3 {
-        width: 25%;
-    }
-
-    .col-md-4 {
-        width: 33.3333333333%;
-    }
-
-    .col-md-5 {
-        width: 41.6666666667%;
-    }
-
-    .col-md-6 {
-        width: 50%;
-    }
-
-    .col-md-7 {
-        width: 58.3333333333%;
-    }
-
-    .col-md-8 {
-        width: 66.6666666667%;
-    }
-
-    .col-md-9 {
-        width: 75%;
-    }
-
-    .col-md-10 {
-        width: 83.3333333333%;
-    }
-
-    .col-md-11 {
-        width: 91.6666666667%;
-    }
-
-    .col-md-12 {
-        width: 100%;
-    }
-}
-@media only screen and (min-width: 992px) {
-    .col-lg-1 {
-        width: 8.3333333333%;
-    }
-
-    .col-lg-2 {
-        width: 16.6666666667%;
-    }
-
-    .col-lg-3 {
-        width: 25%;
-    }
-
-    .col-lg-4 {
-        width: 33.3333333333%;
-    }
-
-    .col-lg-5 {
-        width: 41.6666666667%;
-    }
-
-    .col-lg-6 {
-        width: 50%;
-    }
-
-    .col-lg-7 {
-        width: 58.3333333333%;
-    }
-
-    .col-lg-8 {
-        width: 66.6666666667%;
-    }
-
-    .col-lg-9 {
-        width: 75%;
-    }
-
-    .col-lg-10 {
-        width: 83.3333333333%;
-    }
-
-    .col-lg-11 {
-        width: 91.6666666667%;
-    }
-
-    .col-lg-12 {
-        width: 100%;
-    }
 }

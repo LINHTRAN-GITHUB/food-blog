@@ -186,7 +186,7 @@ ul.recipe-detail__col2 li {
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 ul.recipe-detail__col2 h3 {
