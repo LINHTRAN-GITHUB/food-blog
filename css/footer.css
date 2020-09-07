@@ -141,7 +141,8 @@ img {
     color: #474747;
 }
 
-.footer-col__link li a:hover {
+.footer-col__link a:hover,
+.footer-col__link li.active a {
     color: #fe2a6b;
 }
 

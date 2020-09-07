@@ -129,7 +129,7 @@
 }
 
 .about-col__man {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;

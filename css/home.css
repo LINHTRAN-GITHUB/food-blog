@@ -20,18 +20,77 @@
     z-index: 3;
 
     transform: rotate(4deg);
+    transition: all 0.55;
+    animation-name: healthy;
+    animation-duration: 2s;
+}
+
+@keyframes healthy {
+    from {
+        transform: rotate(4deg);
+        transform: scale(0.2);
+        opacity: 0;
+    }
+
+    80% {
+        transform: rotate(4deg);
+        opacity: 1;
+    }
+    to {
+        transform: rotate(4deg);
+        transform: scale(1);
+    }
 }
 
 .home-hero__title h2 {
     z-index: 4;
+
+    animation-name: chef;
+    transition: all 0.55;
+    animation-duration: 3s;
 }
+
+@keyframes chef {
+    from {
+        transform: scale(0.2);
+        opacity: 0;
+        animation-delay: 2s;
+    }
+
+    80% {
+        opacity: 1;
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
 .home-hero__title h3 {
     z-index: 5;
+
+    animation-name: foody;
+    transition: all 0.55;
+    animation-duration: 4s;
+}
+
+@keyframes foody {
+    from {
+        transform: scale(0.2);
+        opacity: 0;
+        animation-delay: 2s;
+    }
+
+    80% {
+        opacity: 1;
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 .home-hero__title h1 span {
     display: inline-block;
-    padding: 0 28px;
+    padding: 0 15px;
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: -1px -5px 20px 0 rgba(0, 0, 0, 0.3);
@@ -39,12 +98,24 @@
     background-color: #ff2a6b;
     color: #fff;
 
-    font-size: 72px;
+    font-size: 40px;
     font-weight: 700;
 }
+
+@media only screen and (min-width: 768px) {
+    .home-hero__title h1 span {
+        font-size: 60px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .home-hero__title h1 span {
+        font-size: 72px;
+    }
+}
+
 .home-hero__title h2 span {
     display: inline-block;
-    padding: 5px 28px;
+    padding: 5px 15px;
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: -1px -5px 20px 0 rgba(0, 0, 0, 0.3);
@@ -52,9 +123,21 @@
     background-color: #fdc856;
     color: #fff;
 
-    font-size: 48px;
+    font-size: 30px;
     font-weight: 700;
 }
+
+@media only screen and (min-width: 768px) {
+    .home-hero__title h2 span {
+        font-size: 45px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .home-hero__title h2 span {
+        font-size: 48px;
+    }
+}
+
 .home-hero__title h3 span {
     display: inline-block;
     padding: 10px 28px;
@@ -65,8 +148,19 @@
     background-color: #bdde64;
     color: #fff;
 
-    font-size: 36px;
+    font-size: 20px;
     font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+    .home-hero__title h3 span {
+        font-size: 35px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .home-hero__title h3 span {
+        font-size: 36px;
+    }
 }
 
 /* ............... */
@@ -285,15 +379,21 @@
     font-family: inherit;
 }
 
-.home-start i {
-    color: #fbb710;
+ul.home-start {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row-reverse nowrap;
 
-    font-size: 11px;
+    color: #aaaaaa;
 }
-.home-start .active {
-    color: #e0e3e4;
-
+ul.home-start > li {
     font-size: 11px;
+
+    transition: all 0.25s;
+}
+.home-start li:hover,
+.home-start li:hover ~ li {
+    color: #fdc856;
 }
 
 .most-liked__recipes-col2 h3 {
@@ -350,6 +450,7 @@
 }
 
 .home-order__col3 {
+    /* border: 1px solid yellow; */
     position: relative;
 
     margin-top: 30px;
@@ -388,6 +489,8 @@
     padding: 48px 40px 45px 40px;
 
     background-color: #fff;
+
+    box-shadow: 0 17px 29px rgba(0, 0, 0, 0.15);
 }
 
 .home-order__absolute-2 h5 {
@@ -429,18 +532,16 @@
     right: 0px;
     bottom: 0px;
 
-    width: 41px;
-    height: 41px;
+    padding: 12px 18px;
 
     background-color: #ff2a6b;
     color: #fff;
 
     font-size: 23px;
-    text-align: center;
 }
-
 /* section home-review */
 /* ******************* */
+
 .home-review {
     background-color: #fdc856;
 }
@@ -463,7 +564,6 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    box-sizing: border-box;
     text-align: center;
 
     background-color: #fff;
@@ -472,9 +572,11 @@
 
 .home-review__col-reletive {
     position: relative;
+    /* border: 1px solid green; */
 }
+
 .home-review__col-reletive img {
-    width: 166px;
+    width: 180px;
     height: auto;
 
     vertical-align: middle;
@@ -483,7 +585,7 @@
 .home-review__absolute-1 {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 81px;
 
     padding: 9px 2px 8px 13px;
 
@@ -491,6 +593,12 @@
     color: #fff;
 
     font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+    .home-review__absolute-1 {
+        left: 0;
+    }
 }
 
 .home-review__absolute-1::before {
@@ -505,12 +613,18 @@
     border-right: 30px solid transparent;
 }
 
-.home-review__col-11 {
+.home-review__col-start {
     height: auto;
     padding-top: 25px;
     padding-left: 15px;
 
     background-color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    .home-review__start {
+        text-align: left;
+    }
 }
 
 .home-review__start p {
@@ -534,9 +648,17 @@
 
 .home-review__chef {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
 }
+
+@media only screen and (min-width: 768px) {
+    .home-review__chef {
+        justify-content: left;
+    }
+}
+
+/* Large */
 
 .home-review__chef img {
     width: 38px;
@@ -552,4 +674,9 @@
 
     font-size: 14.1px;
     line-height: 2.1;
+}
+@media only screen and (min-width: 768px) {
+    .home-review__chef h6 {
+        text-align: left;
+    }
 }
