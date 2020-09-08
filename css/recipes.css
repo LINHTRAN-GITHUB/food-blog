@@ -187,6 +187,7 @@ ul.recipes-row__start > li i {
     padding: 13px 13px;
     margin-right: 4px;
     text-align: center;
+    text-decoration: none;
     background-color: #ccc;
     color: #fff;
 

@@ -71,8 +71,7 @@ h3 {
     padding-left: 15px;
     padding-right: 15px;
 }
-.contact-form__name,
-.contact-form__email {
+.contact-form__name {
     padding-right: 15px;
 }
 .contact-form input {
